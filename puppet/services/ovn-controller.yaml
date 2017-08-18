@@ -60,7 +60,7 @@ outputs:
         ovn::controller::ovn_encap_type: {get_param: OVNTunnelEncapType}
         ovn::controller::ovn_encap_ip: {get_param: [ServiceNetMap, NeutronApiNetwork]}
         ovn::controller::ovn_bridge_mappings: {get_param: NeutronBridgeMappings}
-        nova::compute::force_config_drive: true
+        nova::compute::force_config_drive: false
         tripleo.ovn_controller.firewall_rules:
           '118 neutron vxlan networks':
                 proto: 'udp'
